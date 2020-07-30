@@ -1,0 +1,356 @@
+.haad {
+    background: url("../assets/images/banner-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* box-sizing: content-box; */
+    background-position-y: -374px;
+    /* height: 532px; */
+    width: 100%;
+}
+
+.moving {
+    position: relative;
+    background-position: bottom center;
+    margin: 0;
+    padding: 0;
+    background: url('../dec/backiii.png') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+    width: 100%;
+    height: 900px;
+}
+
+@-webkit-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 500px;
+    }
+}
+
+@-moz-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 500px;
+    }
+}
+
+@-ms-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 500px;
+    }
+}
+
+@-o-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 500px;
+    }
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 500px;
+    }
+}
+
+.hiuh {
+    height: 520px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0;
+}
+
+.hhyyy {
+    height: 600px;
+}
+
+.hiyt {
+    height: 600px;
+}
+
+.fit {
+    object-fit: scale-down
+}
+
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.bgopacty {
+    background-color: rgb(255, 255, 255);
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+.bdf {
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    height: 50px;
+    width: 200px;
+}
+
+.with {
+    width: 2000px;
+}
+
+.radis {
+    height: 600px;
+}
+
+.headerd {
+    background-image: linear-gradient(90deg, #ff00dd, #ff7300);
+    background-color: #ebebebad;
+    background-blend-mode: overlay;
+}
+
+.headerd2 {
+    background-image: linear-gradient(90deg, #ff7300, #ff00dd);
+    background-color: #ebebebad;
+    background-blend-mode: overlay;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.coll {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.dropdown-toggle {
+    color: aliceblue;
+}
+
+.backk {
+    position: relative;
+    top: -800px;
+}
+
+.shape {
+    position: relative;
+    left: 53px;
+    transition: .5s;
+}
+
+.menu {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+}
+
+.menu-p {
+    position: absolute;
+    margin-top: 20px;
+    left: 1275px;
+    transition: .5s;
+    opacity: -2;
+}
+
+.llll {
+    margin-top: 100px;
+}
+
+.hhhhy:hover .menu-p {
+    left: 1185px;
+    opacity: 1;
+    transition-delay: .5;
+}
+
+.hhhhy:hover .menu {
+    background-color: #b9c9fc34;
+    transform: rotate(-945deg);
+    transition: .5s;
+    padding: 20px;
+    width: 75px;
+    height: 75px;
+}
+
+.single-services:hover .shape {
+    transform: rotate(-600deg);
+    transition: .5s;
+}
+
+.single-services:hover .shape-1 {
+    transform: rotate(600deg);
+    transition: .5s;
+}
+
+.single-services:hover .fas {
+    animation: 1S ease-in-out animm infinite;
+    transition: .5s;
+}
+
+.single-services {
+    transition: .5s;
+}
+
+.pic_nav {
+    width: 55px;
+    height: 55px;
+}
+
+.redift {
+    border: 1px solid rgba(230, 230, 230, 0.137);
+    border-radius: 10px;
+}
+
+.z2 {
+    z-index: 3;
+    padding: 3px;
+    transition: .5s;
+    border-radius: 10px;
+    width: 48.3%;
+    background-color: #ebebeb;
+    color: #000000;
+}
+
+.z4 {
+    z-index: 3;
+    padding: 3px;
+    transition: .5s;
+    border-radius: 10px;
+    width: 24%;
+    background-color: #ebebeb;
+    color: #000000;
+}
+
+.ssss {
+    width: 80px;
+    box-sizing: 0;
+}
+
+.bg-blue {
+    background-color: #1435c7c4;
+}
+
+.single-services:hover {
+    background-color: #d4d4d428;
+}
+
+.single-services {
+    transition: .5s;
+}
+
+@keyframes animm {
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+.fas {
+    position: relative;
+    color: #ffffff;
+    right: 120px;
+    top: 10px;
+    font-size: 33px;
+}
+
+.shape-1 {
+    transition: .5s;
+    position: relative;
+    right: 53px;
+}
+
+.couv_size {
+    padding: 0;
+    margin: 0;
+    height: 400px;
+    object-fit: cover
+}
+
+.backmm {
+    background-color: yellow;
+    width: 75%;
+}
+
+.backm {
+    background-color: rgb(8, 204, 155);
+    width: 25%;
+}
+
+.post {
+    width: 100%;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    border-radius: 40px;
+}
+
+.post_prof_pic {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.radiois .col-md-4 {
+    top: 20px;
+}
+
+.HHHHH {
+    height: 86%;
+}
+
+.radiois {
+    border: .1px solid rgba(221, 221, 221, 0.102);
+    border-radius: 30px;
+}
+
+.radioiscv {
+    border-radius: 30px 30px 0px 0px;
+    -moz-border-radius: 30px 30px 0px 0px;
+    -webkit-border-radius: 30px 30px 0px 0px;
+    border: 0px solid #ebebeb;
+}
+
+.prof_pic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.prof_pic_class {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.profinfo-33 {
+    position: relative;
+    top: -170px;
+    left: 70px;
+    color: white;
+}
+
+.tophh {
+    position: relative;
+    top: -120px;
+    background-color: rgba(255, 255, 255, 0);
+}
