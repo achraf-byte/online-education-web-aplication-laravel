@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-Auth::routes();
+
 
 
 //********************************GET********************************
@@ -86,3 +86,7 @@ Route::get('/unfollowclass/{follower}/{following}', 'followsystemcontroller@unfo
 
 Route::get('/search', 'searchcontroller@search');
 Route::get('/search/user', 'searchcontroller@searchuser');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
