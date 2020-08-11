@@ -1,1 +1,7 @@
-{}
+{
+    "workbench.tree.indent": 5,
+    "breadcrumbs.showConstructors": false,
+    "editor.minimap.maxColumn": 73,
+    "editor.wordWrapColumn": 61,
+    "editor.fontSize": 13
+}

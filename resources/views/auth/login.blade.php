@@ -5,14 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ isset($url) ? ucwords($url) : ""}}{{ __('Login') }}</div>
+                <div class="card-header"></div>
 
-                <div class="card-body">
-                @isset($url)
-                <form method="get" action='{{ "/login/teacher/in" }}' aria-label="{{ __('Login') }}">
-                    @else
-                    <form method="get" action="{{ route('teacher_login') }}" aria-label="{{ __('Login') }}">
-                    @endisset
+                <div class="card-body"> teacher loging
+                
+                    <form method="get" action='{{ "/login/teacher/in" }}' aria-label="{{ __('Login') }}">
                         @csrf
 
                         <div class="form-group row">

@@ -8,6 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use App\Models\teacher;
+
 
 class RegisterController extends Controller
 {
@@ -39,6 +42,8 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
+        $this->middleware('guest:teacher');
+        
     }
 
     /**
@@ -50,11 +55,17 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'first_name' => ['required', 'string', 'max:255'],
+            'last_name' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required', 'string', 'max:255'],
+            'adresse' => ['required', 'string', 'max:255'],
+            'subject' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:teachers'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
+
+    
 
     /**
      * Create a new user instance after a valid registration.
@@ -62,12 +73,61 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+  /*  protected function create(array $data)
     {
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }*/
+
+    public function showteacherRegisterForm()
+    {
+        return view('auth.register', ['url' => 'teacher']);
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    
+
+    /**
+     * @param array $data
+     *
+     * @return mixed
+     */
+    
+
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+   
+         
+    
+    protected function createteacher(Request $request)
+    { 
+        $this->validator($request->all())->validate();
+        teacher::create([
+           
+            'first_name' => $request->first_name,
+            'last_name' => $request->last_name,
+            'phone_number' => $request->phone_number,
+            'adresse' => $request->adresse,
+            'subject' => $request->subject,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        return redirect(route('teacher_login_form'));
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    
+
 }
